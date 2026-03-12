@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Layout Kotak</title>
+<style>
+
+body{
+    background:#e6e6e6;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    width: 900px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.box{
+    background:#8fa0d8;
+    color:white;
+    text-align:center;
+    padding:40px 0;
+    font-size:24px;
+    border-radius:15px;
+}
+
+.box.dark{
+    background:#4338ca;
+}
+
+.box4{
+    grid-column: span 2;
+}
+
+.box7{
+    grid-column: span 2;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="box">01</div>
+    <div class="box">02</div>
+    <div class="box">03</div>
+
+    <div class="box dark box4">04</div>
+    <div class="box">05</div>
+
+    <div class="box">06</div>
+    <div class="box dark box7">07</div>
+</div>
+
+</body>
+</html>
